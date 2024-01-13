@@ -4,8 +4,8 @@ function NavBar({ pokemonList }) {
     const [selectedPokemonImg, setSelectedPokemonImg] = useState(null);
 
     const handlePokemonClick = (pokemon) => {
-        setSelectedPokemonImg(pokemon.imgSrc);
-    };
+       setSelectedPokemonImg(pokemon.imgSrc)
+    }
 
     return (
         <div>
@@ -13,7 +13,8 @@ function NavBar({ pokemonList }) {
                 <div>
                     <img src={selectedPokemonImg} />
                 </div>
-            )}
+            ) 
+            }
          
             {pokemonList.map((pokemon) => (
                 <button key={pokemon.name} onClick={() => handlePokemonClick(pokemon)}>
