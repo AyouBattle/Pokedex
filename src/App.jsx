@@ -1,10 +1,16 @@
 import PokemonCard from "./components/PokemonCard";
 import "./App.css"
 import NavBar from "./components/NavBar";
+import { useEffect } from "react";
 
 function App() {
-
-
+  
+useEffect(
+  ()=>{
+    alert("hello pokemon trainer :)")
+  },
+  []
+  )
   return (
     <>
       <NavBar pokemonList={pokemonList}  />
