@@ -4,16 +4,30 @@ function NavBar({ pokemonList }) {
     const [selectedPokemonImg, setSelectedPokemonImg] = useState(null);
 
     const handlePokemonClick = (pokemon) => {
+<<<<<<< Updated upstream
        setSelectedPokemonImg(pokemon.imgSrc)
+=======
+        {pokemon.imgSrc ?
+             (setSelectedPokemonImg(pokemon.imgSrc)) : (setSelectedPokemonImg("???"))
+        }
+       
+    //    if (pokemon.name === "pikachu"){
+    //     alert("Pika pikachu")
+    //  }
+
+    
+>>>>>>> Stashed changes
     }
 
     return (
         <div>
-            {selectedPokemonImg && (
-                <div>
+            {selectedPokemonImg === "???" ? 
+            ((<p>???</p>)
+                
+            ) : (<div>
                     <img src={selectedPokemonImg} />
                 </div>
-            ) 
+            )
             }
          
             {pokemonList.map((pokemon) => (
