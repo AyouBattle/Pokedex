@@ -3,10 +3,8 @@ import React, { useState } from 'react';
 function NavBar({ pokemonList }) {
     const [selectedPokemonImg, setSelectedPokemonImg] = useState(null);
 
+
     const handlePokemonClick = (pokemon) => {
-<<<<<<< Updated upstream
-       setSelectedPokemonImg(pokemon.imgSrc)
-=======
         {pokemon.imgSrc ?
              (setSelectedPokemonImg(pokemon.imgSrc)) : (setSelectedPokemonImg("???"))
         }
@@ -16,8 +14,8 @@ function NavBar({ pokemonList }) {
     //  }
 
     
->>>>>>> Stashed changes
     }
+
 
     return (
         <div>

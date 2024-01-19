@@ -3,18 +3,8 @@ import "./App.css"
 import NavBar from "./components/NavBar";
 
 function App() {
-<<<<<<< Updated upstream
 
 
-=======
-  
-// useEffect(
-//   ()=>{
-//     alert("hello pokemon trainer :)")
-//   },
-//   []
-//   )
->>>>>>> Stashed changes
   return (
     <>
       <NavBar pokemonList={pokemonList}  />
